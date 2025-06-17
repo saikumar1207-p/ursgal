@@ -20,7 +20,7 @@ resources:
       endpoint: DSO-R1-Github
   pipelines:
     - pipeline: fpreppy_release_pipeline
-      source: gsk-tech.fpreppy_release_pipeline
+      source: saikumar1207-p.fpreppy_release_pipeline
       trigger: none
 stages:
   - stage: CodeQuality
