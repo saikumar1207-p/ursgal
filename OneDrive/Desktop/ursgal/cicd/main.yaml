@@ -17,11 +17,7 @@ resources:
       type: github
       name: saikumar1207-p/dso_azure_pipeline_templates
       ref: main
-      endpoint: DSO-R1-Github
-  pipelines:
-    - pipeline: fpreppy_release_pipeline
-      source: saikumar1207-p.fpreppy_release_pipeline
-      trigger: none
+      endpoint: saikumar1207-p
 stages:
   - stage: CodeQuality
     displayName: Code Quality Checks    
