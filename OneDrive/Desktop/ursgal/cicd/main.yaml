@@ -1,4 +1,6 @@
 triggers:
  - main
  - dev
+stages: 
+  stage: code Quality check
  
