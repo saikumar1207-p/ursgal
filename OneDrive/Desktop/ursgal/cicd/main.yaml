@@ -17,7 +17,7 @@ resources:
       type: github
       name: saikumar1207-p/dso_azure_pipeline_templates
       ref: main
-      endpoint: saikumar1207-p
+      endpoint: saikumar1207-A
 stages:
   - stage: CodeQuality
     displayName: Code Quality Checks    
