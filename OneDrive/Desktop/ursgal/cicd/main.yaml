@@ -21,11 +21,11 @@ resources:
       endpoint: saikumar1207-A
 stages:
     
- # - stage: CodeQuality
+ - stage: CodeQuality
+       steps:
+          
+    displayName: Code Quality Checks
+    jobs:
+     - job: CodeQualityJob
        steps:
           - script: echo "hi"
-   # displayName: Code Quality Checks
-   # jobs:
-     # - job: CodeQualityJob
-     #   steps:
-         # - script: echo "hi"
