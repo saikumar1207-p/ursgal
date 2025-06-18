@@ -4,7 +4,12 @@ resources:
       source: mainpipeline
       trigger: true
 
-trigger: none
+trigger:
+  branches:
+    include:
+      - main
+      - dev
+      - feature/*
 
 pool:
   name: 'default'
