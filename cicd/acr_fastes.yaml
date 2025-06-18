@@ -1,11 +1,11 @@
 trigger: none
 pr: none
 
-resources:
-  pipelines:
-    - pipeline: mainpipe                  # alias to use in this pipeline
-      source: mainpipelinetest           # exact name of the other pipeline in Azure DevOps
-      trigger: true                      # auto-trigger acrtest when mainpipelinetest finishes
+#resources:
+  #pipelines:
+    #- pipeline: mainpipe                  # alias to use in this pipeline
+     # source: mainpipelinetest           # exact name of the other pipeline in Azure DevOps
+      #trigger: true                      # auto-trigger acrtest when mainpipelinetest finishes
 
 pool:
   vmImage: 'windows-latest'
