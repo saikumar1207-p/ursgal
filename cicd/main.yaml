@@ -1,1 +1,24 @@
+trigger:
+  branches:
+    include:
+      - main
+      - dev
+
+pr:
+  drafts: false
+  branches:
+    include:
+      - main
+      - dev
+      - feature/*
+      - fix/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+
+  - script: echo "Hello, this is a basic script step"
+    displayName: "Run Script"
 
