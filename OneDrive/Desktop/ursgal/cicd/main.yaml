@@ -19,10 +19,11 @@ resources:
       name: saikumar1207-p/dso_azure_pipeline_templates
       ref: main
       endpoint: saikumar1207-A
-stages:
-  - stage: CodeQuality
-    displayName: Code Quality Checks
-    jobs:
-      - job: CodeQualityJob
-        steps:
-          - script: echo "hi"
+#stages:
+ # - stage: CodeQuality
+    
+   # displayName: Code Quality Checks
+   # jobs:
+     # - job: CodeQualityJob
+     #   steps:
+         # - script: echo "hi"
