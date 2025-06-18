@@ -13,21 +13,11 @@ pr:
       - feature/*
       - fix/*
 
-resources:
-  repositories:
-    - repository: templates
-      type: github
-      name: saikumar1207-p/dso_azure_pipeline_templates
-      ref: refs/heads/main    # ✅ Recommended explicit format
-      endpoint: saikumar1207-A
+pool:
+  vmImage: 'ubuntu-latest'
 
-stages:
-  - stage: CodeQuality
-    displayName: Code Quality Checks
-    jobs:
-      - job: CodeQualityJob
-        displayName: Run Code Quality Job
-        steps:
-          - checkout: self
-          - script: echo "Running code quality checks..."
-            displayName: Echo Message
+steps:
+  - checkout: self
+
+  - script: echo "Hello, this is a basic script step"
+    displayName: "Run Script"
