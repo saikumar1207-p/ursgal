@@ -1,18 +1,15 @@
+trigger: none
+pr: none
+
 resources:
   pipelines:
-    - pipeline: mainpipe
-      source: mainpipeline1
-      trigger: true
-
-trigger:
-  branches:
-    include:
-      - main
-      - dev
-      - feature/*
+    - pipeline: mainpipe                  # alias to use in this pipeline
+      source: mainpipelinetest           # exact name of the other pipeline in Azure DevOps
+      trigger: true                      # auto-trigger acrtest when mainpipelinetest finishes
 
 pool:
+  vmImage: 'windows-latest'
   name: 'default'
 
 steps:
-- script: echo "Pipeline B triggered after Pipeline A finished"
+- script: echo "ACR pipeline (acrtest) triggered after mainpipelinetest completes."
