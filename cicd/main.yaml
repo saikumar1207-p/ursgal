@@ -1,8 +1,10 @@
 trigger:
   branches:
     include:
-      - main
+     - main
       - dev
+      - feature/*
+      
 
 pr:
   drafts: false
