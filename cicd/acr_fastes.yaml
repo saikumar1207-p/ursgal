@@ -1,7 +1,7 @@
 resources:
   pipelines:
     - pipeline: mainpipe
-      source: mainpipeline
+      source: mainpipeline1
       trigger: true
 
 trigger:
